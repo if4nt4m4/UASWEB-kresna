@@ -16,7 +16,7 @@ if (isset($_POST['edit'])){
 
 
     $query = $db->koneksi->prepare("UPDATE pendaftaran SET noUjian = '$noUjian', 
-    nama = '$nama', tempat = '$tempat', tgllahir = '$tanggal', alamat = '$alamat', jurusan = '$jurusan', prodi = '$prodi', email = '$email' WHERE noUjian= '$noUjian'");
+    nama = '$nama', tempat = '$tempat', tgllahir = '$tanggal', alamat = '$alamat', noHp = '$noHp', jurusan = '$jurusan', prodi = '$prodi', email = '$email' WHERE noUjian= '$noUjian'");
     $query->execute();
 
     header("location:viewdata.php");
